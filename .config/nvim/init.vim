@@ -2,19 +2,19 @@ set nocompatible
 set showmatch
 set ignorecase
 set number
+set relativenumber
+set mouse=a
 syntax on
 
 
 
-call plug#begin(“~/.vim/plugged”)
- “ Plugin Section
+call plug#begin()
+
  Plug 'dracula/vim'
- Plug 'ryanoasis/vim-devicons'
- Plug 'SirVer/ultisnips'
- Plug 'honza/vim-snippets'
- Plug 'scrooloose/nerdtree'
- Plug 'preservim/nerdcommenter'
- Plug 'mhinz/vim-startify'
- Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ Plug 'vim-airline/vim-airline'
+ Plug 'vim-airline/vim-airline-themes'
+
 call plug#end()
 
+
+let g:airline_theme = 'dracula'
